@@ -1,0 +1,396 @@
+/* -----------------Variables */
+:root {
+
+    /* ---------Color */
+    --black-color:#121A0D;
+    --white-color:#F2FFE6;
+    --orange-color:#FFB700;
+    --dark-orange-color:#FF9500;
+    --green-color:#6CCC0E;
+
+    /* ---------Font Size */
+    --little-size:15px;
+    --median-size:20px;
+    --big-size:40px;
+
+    /* ---------Font weight */
+    --regular-font:400;
+    --medium-font:500;
+    --bold-font:700;
+
+}
+/* -----------------Variables */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+}
+
+h2 {
+    font-weight: var(--bold-font);
+    font-size: var(--big-size);
+    margin: 0;
+}
+
+h3, label {
+    margin: 0;
+    font-size: var(--median-size);
+    font-weight: var(--bold-font);
+}
+
+p {
+    font-weight: var(--regular-font);
+    font-size: var(--little-size);
+}
+
+label {
+    color: var(--black-color);
+}
+
+/*------------------Header */
+
+.header-container {
+    background-color: var(--black-color);
+    height: 80px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    margin: 0;
+}
+
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header-menu li {
+    padding-left: 10px;
+}
+
+.menu-option {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-color);
+    font-size: var(--median-size);
+    font-weight: var(--medium-font);
+}
+
+.header-menu a:hover {
+    color: var(--orange-color);
+}
+
+.header-menu a img {
+    width: 50px;
+}
+
+/*------------------index */
+
+.hero {
+    background-image: url(../images/Trazado\ 1.png);
+    background-size: 100% 45%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 50px 7% 0 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product {
+    margin-top: 30px;
+    background-color: var(--orange-color);
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 10px 10px 8px var(--black-color);
+    width: 550px;
+}
+
+.product-img {
+    margin-bottom: -4px;
+    text-align: center;
+    width: inherit;
+}
+
+.product-img img {
+    width: inherit;
+    border-radius: 30px 30px 0 0;
+}
+
+.product-button {
+    width: 550px;
+    padding: 20px 0 20px 0;
+    border: none;
+    border-radius: 0 0 30px 30px;
+    background-color: transparent;
+    color: var(--white-color);
+    font-weight: var(--bold-font);
+    font-size: var(--big-size);
+    cursor: pointer;
+}
+
+.product-button:hover {
+    background-color: var(--dark-orange-color);
+}
+
+.benefits {
+    padding: 100px 7% 100px 7%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background-color: var(--green-color);
+    border: 5px solid var(--orange-color);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 8px var(--black-color);
+    text-align: center;
+    color: var(--white-color);
+    width: 230px;
+}
+
+.benefit-img {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.benefit-img img {
+    width: 90%;
+}
+
+.benefit h3 {
+    padding: 10px;
+}
+
+/*------------------Producto */
+
+.row-tittle {
+    height: 80px;
+    background-image: url(../images/Trazado\ 1.png);
+    background-size: 100% 85%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-color);
+}
+
+.one-product {
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: var(--black-color);
+}
+
+.one-product h2 {
+    padding: 10px 0 10px 0;
+}
+
+.buy-button {
+    padding: 7px 50px 7px 50px;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    border: 10px;
+    border-color: var(--dark-orange-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: var(--dark-orange-color);
+}
+
+.product-description {
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*------------------Sale */
+
+.hero-sale {
+    background-image: url(../images/Trazado\ 1.png);
+    background-size: 100% 45%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.sale-tittle {
+    color: var(--white-color);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.img-sale {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-sale img {
+    width: inherit;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px var(--black-color);
+}
+
+.form-container {
+    width: 95%;
+    height: 100%;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px var(--black-color);
+    background-color: var(--white-color);
+}
+
+.form {
+    height: 80%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form input {
+    height: 25px;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+}
+
+.form input[type=submit] {
+    margin-top: 10px;
+    height: 30px;
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px var(--black-color);
+    font-size: var(--median-size);
+    font-weight: var(--bold-font);
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background-color: var(--dark-orange-color);
+}
+
+/*------------------Success */
+
+.buy-success {
+    height: 80vh;
+    color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.img-logo-success img {
+    height: 70px;
+}
+
+.img-car-success {
+    display: flex;
+    justify-content: center;
+}
+
+.img-car-success img {
+    height: 60px;
+}
+
+.buy-success h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*------------------Footer */
+
+.footer {
+    background-color: var(--green-color);
+    padding: 30px 7% 30px 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    width: 350px;
+    height: 350px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.footer-section h2 {
+    margin: 10px;
+}
+
+.footer-payment-methods img {
+    width: 330px;
+    padding-top: 50px;
+}
+
+.footer-logo {
+    width: 330px;
+    padding-bottom: 10px;
+}
+
+.social-network {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--orange-color);
+}
+
+.social-network img {
+    width: 40px;
+    object-fit: contain;
+    padding: 0 20px 0 20px;
+}
+
+.social-network h3 {
+    padding: 20px 0 20px 0;
+}
+
+.autor {
+    margin: 0;
+    padding: 10px 4% 10px 4%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: var(--little-size);
+    font-weight: var(--regular-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.autor p {
+    margin: 0;
+}
+
+.autor img {
+    width: 30px;
+    padding-left: 10px;
+}
